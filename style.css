@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #577BC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin-top: 1rem;
+}
+.container{
+    margin-top: 2rem;
+    width: 70vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.box{
+    width: 18vmin;
+    height: 18vmin;
+    background-color:#441752 ;
+    border: none;
+    border-radius:1rem;
+    color:#fff;
+    font-size: 2.5rem;
+}
+.winner{
+    margin-top: 3rem;
+    height: 30vmin;
+    width: 45vmin;
+    border-radius: 5vmin;
+    border:0.3vmin solid #fff;
+    background-color:#000957;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reset-btn{
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;  
+}
+#newbtn{
+    margin-top: 1rem;
+    height: 5vmin;
+    width: 15vmin;
+    font-size: 1rem;
+    border: none;
+    border-radius:0.5rem;
+    font-weight: bold;
+    cursor: pointer;  
+    
+}
+#winGif{
+    width:15vmin;
+}
+#winText{
+    color:#fff;
+    font-size: 1.2rem;
+}
+.hide{
+    display: none;
+}
+@media (max-width: 450px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .container {
+        width: 90vmin;
+    }
+    .game {
+        width: 80vmin;
+        gap: 0.5rem;
+    }
+    .box {
+        width: 20vmin;
+        height: 20vmin;
+        font-size: 2rem;
+    }
+    .winner {
+        width: 80vmin;
+        height: 40vmin;
+        border-radius: 2vmin;
+    }
+    #reset-btn, #newbtn {
+        font-size: 0.4rem;
+        padding: 0.5rem;
+    }
+    #winGif {
+        width: 20vmin;
+    }
+    #winText {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .game {
+        width: 50vmin;
+    }
+    .box {
+        width: 15vmin;
+        height: 15vmin;
+        font-size: 2rem;
+    }
+    .winner {
+        width: 50vmin;
+        height: 30vmin;
+    }
+}
